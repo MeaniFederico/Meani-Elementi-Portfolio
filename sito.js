@@ -1,126 +1,470 @@
-function primoclick() {
+function mostroiralnda() {
 
-   $("#sci").removeClass("sivede");
-   $("#sci").addClass("nonsivede");
-   $("#david").removeClass("nonsivede");
-   $("#david").addClass("sivede");
+   $("#irlanda").removeClass("fchiusa");
+   $("#irlanda").addClass("f1aperta");
+   $("#sfondoperfoto").removeClass("nullo");
+   $("#sfondoperfoto").addClass("sfondoingrandito");
+   
    
 }
 
-function secondoclick() {
+function nascondoirlanda() {
 
-   $("#david").removeClass("sivede");
-   $("#david").addClass("nonsivede");
-   $("#ktm").removeClass("nonsivede");
-   $("#ktm").addClass("sivede");
-  
+   $("#irlanda").removeClass("f1aperta");
+   $("#irlanda").addClass("fchiusa");
+   $("#sfondoperfoto").removeClass("sfondoingrandito");
+   $("#sfondoperfoto").addClass("nullo");
+   
    
 }
 
-function terzoclick() {
+function ingrandisciirlanda() { 
 
-   $("#ktm").removeClass("sivede");
-   $("#ktm").addClass("nonsivede");
-   $("#camping").removeClass("nonsivede");
-   $("#camping").addClass("sivede");
+   if($("#irlanda").hasClass("fchiusa")) {
+      mostroiralnda();
+   }
+   
    
 }
 
-function quartoclick() {
+$("#f1").on("click", ingrandisciirlanda);
 
-   $("#camping").removeClass("sivede");
-   $("#camping").addClass("nonsivede");
-   $("#sci").removeClass("nonsivede");
-   $("#sci").addClass("sivede");
+function riduciirlanda() { 
 
+   if($("#irlanda").hasClass("f1aperta")) {
+      nascondoirlanda();
+   }
+   
    
 }
 
+$("#irlanda").on("click", riduciirlanda);
 
 
-function quando_clicki() { 
 
-	if($("#sci").hasClass("sivede")) {
-		primoclick();
-	}
-	else if($("#david").hasClass("sivede")) {
-     
-		secondoclick();
-	}
-	else if($("#ktm").hasClass("sivede")){
-     
-		terzoclick();
-	}
-	else if($("#camping").hasClass("sivede")){
-     
-		quartoclick();
-	}
-	
-}
 
-$("#destra").on("click", quando_clicki);
 
-function primoclickrovescio() {
 
-   $("#camping").removeClass("sivede");
-   $("#camping").addClass("nonsivede");
-   $("#ktm").removeClass("nonsivede");
-   $("#ktm").addClass("sivede");
+
+
+
+
+
+
+
+function mostrolagoazzurro() {
+
+   $("#lagoazzurro").removeClass("fchiusa");
+   $("#lagoazzurro").addClass("f1aperta");
+   $("#sfondoperfoto").removeClass("nullo");
+   $("#sfondoperfoto").addClass("sfondoingrandito");
+   
    
 }
 
-function secondoclickrovescio() {
+function nascondolagoazzurro() {
 
-   $("#ktm").removeClass("sivede");
-   $("#ktm").addClass("nonsivede");
-   $("#david").removeClass("nonsivede");
-   $("#david").addClass("sivede");
-  
+   $("#lagoazzurro").removeClass("f1aperta");
+   $("#lagoazzurro").addClass("fchiusa");
+   $("#sfondoperfoto").removeClass("sfondoingrandito");
+   $("#sfondoperfoto").addClass("nullo");
+   
    
 }
 
-function terzoclickrovescio() {
+function ingrandiscilagoazzurro() { 
 
-   $("#david").removeClass("sivede");
-   $("#david").addClass("nonsivede");
-   $("#sci").removeClass("nonsivede");
-   $("#sci").addClass("sivede");
+   if($("#lagoazzurro").hasClass("fchiusa")) {
+      mostrolagoazzurro();
+   }
+   
    
 }
 
-function quartoclickrovescio() {
+$("#f2").on("click", ingrandiscilagoazzurro);
 
-   $("#sci").removeClass("sivede");
-   $("#sci").addClass("nonsivede");
-   $("#camping").removeClass("nonsivede");
-   $("#camping").addClass("sivede");
+function riducilagoazzurro() { 
 
+   if($("#lagoazzurro").hasClass("f1aperta")) {
+      nascondolagoazzurro();
+   }
+   
    
 }
 
+$("#lagoazzurro").on("click", nascondolagoazzurro);
 
 
-function quando_clickirovescio() { 
 
-	if($("#camping").hasClass("sivede")) {
-		primoclickrovescio();
-	}
-	else if($("#ktm").hasClass("sivede")) {
-     
-		secondoclickrovescio();
-	}
-	else if($("#david").hasClass("sivede")){
-     
-		terzoclickrovescio();
-	}
-	else if($("#sci").hasClass("sivede")){
-     
-		quartoclickrovescio();
-	}
-	
+
+
+
+
+
+
+
+
+
+
+
+
+function mostrolagoazzurroest() {
+
+   $("#lagoazzurroest").removeClass("fchiusa");
+   $("#lagoazzurroest").addClass("f3aperta");
+   $("#sfondoperfoto").removeClass("nullo");
+   $("#sfondoperfoto").addClass("sfondoingrandito");
+   
+   
 }
 
-$("#sinistra").on("click", quando_clickirovescio);
+function nascondolagoazzurroest() {
+
+   $("#lagoazzurroest").removeClass("f3aperta");
+   $("#lagoazzurroest").addClass("fchiusa");
+   $("#sfondoperfoto").removeClass("sfondoingrandito");
+   $("#sfondoperfoto").addClass("nullo");
+   
+   
+}
+
+function ingrandiscilagoazzurroest() { 
+
+   if($("#lagoazzurroest").hasClass("fchiusa")) {
+      mostrolagoazzurroest();
+   }
+   
+   
+}
+
+$("#f3").on("click", ingrandiscilagoazzurroest);
+
+function riducilagoazzurroest() { 
+
+   if($("#lagoazzurroest").hasClass("f3aperta")) {
+      nascondolagoazzurroest();
+   }
+   
+   
+}
+
+$("#lagoazzurroest").on("click", nascondolagoazzurroest);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function mostroktm() {
+
+   $("#ktm").removeClass("fchiusa");
+   $("#ktm").addClass("f3aperta");
+   $("#sfondoperfoto").removeClass("nullo");
+   $("#sfondoperfoto").addClass("sfondoingrandito");
+   
+   
+}
+
+function nascondoktm() {
+
+   $("#ktm").removeClass("f3aperta");
+   $("#ktm").addClass("fchiusa");
+   $("#sfondoperfoto").removeClass("sfondoingrandito");
+   $("#sfondoperfoto").addClass("nullo");
+   
+   
+}
+
+function ingrandisciktm() { 
+
+   if($("#ktm").hasClass("fchiusa")) {
+      mostroktm();
+   }
+   
+   
+}
+
+$("#f4").on("click", ingrandisciktm);
+
+function riduciktm() { 
+
+   if($("#ktm").hasClass("f3aperta")) {
+      nascondoktm();
+   }
+   
+   
+}
+
+$("#ktm").on("click", nascondoktm);
+
+
+
+
+
+
+
+
+
+
+
+function mostrolux() {
+
+   $("#lux").removeClass("fchiusa");
+   $("#lux").addClass("f5aperta");
+   $("#sfondoperfoto").removeClass("nullo");
+   $("#sfondoperfoto").addClass("sfondoingrandito");
+   
+   
+}
+
+function nascondolux() {
+
+   $("#lux").removeClass("f5aperta");
+   $("#lux").addClass("fchiusa");
+   $("#sfondoperfoto").removeClass("sfondoingrandito");
+   $("#sfondoperfoto").addClass("nullo");
+   
+   
+}
+
+function ingrandiscilux() { 
+
+   if($("#lux").hasClass("fchiusa")) {
+      mostrolux();
+   }
+   
+   
+}
+
+$("#f5").on("click", ingrandiscilux);
+
+function riducilux() { 
+
+   if($("#lux").hasClass("f5aperta")) {
+      nascondolux();
+   }
+   
+   
+}
+
+$("#lux").on("click", nascondolux);
+
+
+
+
+
+
+
+
+
+
+function mostrocorfu() {
+
+   $("#corfu").removeClass("fchiusa");
+   $("#corfu").addClass("f1aperta");
+   $("#sfondoperfoto").removeClass("nullo");
+   $("#sfondoperfoto").addClass("sfondoingrandito");
+   
+   
+}
+
+function nascondocorfu() {
+
+   $("#corfu").removeClass("f1aperta");
+   $("#corfu").addClass("fchiusa");
+   $("#sfondoperfoto").removeClass("sfondoingrandito");
+   $("#sfondoperfoto").addClass("nullo");
+   
+   
+}
+
+function ingrandiscicorfu() { 
+
+   if($("#corfu").hasClass("fchiusa")) {
+      mostrocorfu();
+   }
+   
+   
+}
+
+$("#f6").on("click", ingrandiscicorfu);
+
+function riducicorfu() { 
+
+   if($("#corfu").hasClass("f1aperta")) {
+      nascondocorfu();
+   }
+   
+   
+}
+
+$("#corfu").on("click", nascondocorfu);
+
+
+
+
+
+
+
+
+
+
+function mostrohangar() {
+
+   $("#hangar").removeClass("fchiusa");
+   $("#hangar").addClass("f7aperta");
+   $("#sfondoperfoto").removeClass("nullo");
+   $("#sfondoperfoto").addClass("sfondoingrandito");
+   
+   
+}
+
+function nascondohangar() {
+
+   $("#hangar").removeClass("f7aperta");
+   $("#hangar").addClass("fchiusa");
+   $("#sfondoperfoto").removeClass("sfondoingrandito");
+   $("#sfondoperfoto").addClass("nullo");
+   
+   
+}
+
+function ingrandiscihangar() { 
+
+   if($("#hangar").hasClass("fchiusa")) {
+      mostrohangar();
+   }
+   
+   
+}
+
+$("#f7").on("click", ingrandiscihangar);
+
+function riducihangar() { 
+
+   if($("#hangar").hasClass("f7aperta")) {
+      nascondohangar();
+   }
+   
+   
+}
+
+$("#hangar").on("click", nascondohangar);
+
+
+
+
+
+
+
+
+
+
+
+
+
+function mostrobollettone() {
+
+   $("#bollettone").removeClass("fchiusa");
+   $("#bollettone").addClass("f1aperta");
+   $("#sfondoperfoto").removeClass("nullo");
+   $("#sfondoperfoto").addClass("sfondoingrandito");
+   
+   
+}
+
+function nascondobollettone() {
+
+   $("#bollettone").removeClass("f1aperta");
+   $("#bollettone").addClass("fchiusa");
+   $("#sfondoperfoto").removeClass("sfondoingrandito");
+   $("#sfondoperfoto").addClass("nullo");
+   
+   
+}
+
+function ingrandiscibollettone() { 
+
+   if($("#bollettone").hasClass("fchiusa")) {
+      mostrobollettone();
+   }
+   
+   
+}
+
+$("#f9").on("click", ingrandiscibollettone);
+
+function riducibollettone() { 
+
+   if($("#bollettone").hasClass("f1aperta")) {
+      nascondobollettone();
+   }
+   
+   
+}
+
+$("#bollettone").on("click", nascondobollettone);
+
+
+
+
+
+
+
+
+function mostrocinqueterre() {
+
+   $("#cinqueterre").removeClass("fchiusa");
+   $("#cinqueterre").addClass("f3aperta");
+   $("#sfondoperfoto").removeClass("nullo");
+   $("#sfondoperfoto").addClass("sfondoingrandito");
+   
+   
+}
+
+function nascondocinqueterre() {
+
+   $("#cinqueterre").removeClass("f3aperta");
+   $("#cinqueterre").addClass("fchiusa");
+   $("#sfondoperfoto").removeClass("sfondoingrandito");
+   $("#sfondoperfoto").addClass("nullo");
+   
+   
+}
+
+function ingrandiscicinqueterre() { 
+
+   if($("#cinqueterre").hasClass("fchiusa")) {
+      mostrocinqueterre();
+   }
+   
+   
+}
+
+$("#f8").on("click", ingrandiscicinqueterre);
+
+function riducicinqueterre() { 
+
+   if($("#cinqueterre").hasClass("f3aperta")) {
+      nascondocinqueterre();
+   }
+   
+   
+}
+
+$("#cinqueterre").on("click", nascondocinqueterre);
+
+
+
 
 
 

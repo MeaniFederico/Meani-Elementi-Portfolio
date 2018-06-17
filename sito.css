@@ -40,7 +40,7 @@ h2{
 #leti{
     position: absolute;
     font-style: italic;
-    width: 30%;
+    width: 15%;
     right: 5vw;
     bottom: 8vh;
     text-align: right;
@@ -406,21 +406,27 @@ h2{
 
 #riquadrofoto{
     position: absolute;
-    width: 90vw;
-    height: 1700px;
-    
+    width: 80vw;
+    height: 1100px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
 .cornice{
+    transition: 0.5s;
     width: 25vW;
     height:300px;
     border: 1px solid grey;
     border-radius: 5px;
     margin: 0;
     overflow: hidden;
+}
+.cornice:hover{
+    transition: 0.5s;
+    width: 26vW;
+    height:310px;
+    border: 2px solid grey;
 }
 
 #c1{
@@ -445,51 +451,215 @@ h2{
 
 #c4{
     position: absolute;
-    top: 500px;
+    top: 400px;
     left: 0;
 }
 
 #c5{
     position: absolute;
-    top: 500px;
+    top: 400px;
     left: 50%;
     transform: translate(-50%, 0%);
 }
 
 #c6{
     position: absolute;
-    top: 500px;
+    top: 400px;
     right: 0;
     
 }
 
 #c7{
     position: absolute;
-    top: 1000px;
+    top: 800px;
     left: 0;
 }
 
 #c8{
     position: absolute;
-    top: 1000px;
+    top: 800px;
     left: 50%;
     transform: translate(-50%, 0%);
 }
 
 #c9{
     position: absolute;
-    top: 1000px;
+    top: 800px;
     right: 0;
     
+}
+
+#f1{
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#f2{
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#f3{
+    width: 400px;
+    height: 500px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#f4{
+    width: 400px;
+    height: 500px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#f5{
+    width: 400px;
+    height: 600px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+#f6{
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#f7{
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#f8{
+    width: 400px;
+    height: 500px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#f9{
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 
 
 
+.sfondoingrandito{
+    transition: all 1s;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90vw;
+    height: 90vh;
+    background-color: white;
+    border: 10px solid grey;
+    border-radius:10px;
+    overflow: hidden;
+
+
+}
+
+.nullo{
+    transition: all 1s;
+    transition-delay: 0.5s;
+    width: 0px;
+    height: 0px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.fchiusa{
+    transition: all 1s;
+    opacity: 0;
+    width: 0vw;
+    height: 0vw;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.f1aperta{
+    transition: all 1s;
+    transition-delay: 0.5s;
+    opacity: 1;
+    width: 50vw;
+    height: 40vw;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 
 
-  
+.f3aperta{
+    transition: all 1s;
+    opacity: 1;
+    width: 32vw;
+    height: 40vw;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.f5aperta{
+    transition: all 1s;
+    opacity: 1;
+    width: 27vw;
+    height: 40vw;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.f7aperta{
+    transition: all 1s;
+    opacity: 1;
+    width: 60vw;
+    height: 40vw;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
    
 
 
@@ -532,7 +702,7 @@ h2{
 #contenitorescorre2 {
 
     width:100vw;
-    height:2000px;
+    height:1600px;
     background:white;
     position: absolute;
     top: 100vh;
@@ -545,7 +715,7 @@ h2{
     height:100px;
     
     position: absolute;
-    top:3200px;
+    top:2800px;
     
 }
 
